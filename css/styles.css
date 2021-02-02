@@ -137,7 +137,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -212,7 +211,8 @@ Navbar
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     justify-self: end;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .nav-links a {
@@ -372,7 +372,8 @@ Hero
     border-radius: var(--radius);
     max-height: 30rem;
     max-width: 25rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
     position: relative;
   }
@@ -516,7 +517,8 @@ Services
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -546,7 +548,8 @@ Projects
 
 .single-img img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
   border-radius: var(--radius);
@@ -608,7 +611,8 @@ Projects
   .projects-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 
@@ -681,7 +685,8 @@ Connect
 .video {
   width: 100%;
   height: 140vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -796,7 +801,8 @@ Skills
   .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 /*
@@ -921,12 +927,14 @@ Blog
   top: 0;
   border-radius: var(--radius);
   overflow: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .blog-front img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-text {
@@ -1066,7 +1074,8 @@ Projects Page
 
 .my-project img {
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .my-project {
