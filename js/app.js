@@ -14,9 +14,9 @@ window.addEventListener("scroll", function () {
 // show sidebar
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
+  console.log("cliked");
 });
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
-// set year
-date.innerHTML = new Date().getFullYear();
+

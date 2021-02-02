@@ -172,7 +172,6 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
 
 /*
 =============== 
@@ -198,8 +197,9 @@ Navbar
 .toggle-btn {
   font-size: 2rem;
   justify-self: end;
-  padding: 0rem 1.5rem;
+  align-self: center;
   color: var(--clr-primary-5);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,6 +239,18 @@ Navbar
   }
 }
 
+/* fixed navbar */
+
+.navbar-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 2;
+}
+
 /*
 =============== 
 Sidebar
@@ -253,6 +265,11 @@ Sidebar
   width: 100vw;
   background: var(--clr-grey-10);
   transition: var(--transition);
+  transform: translateX(-100%);
+}
+
+.show-sidebar {
+  transform: translateX(0);
 }
 
 .side-nav {
@@ -992,8 +1009,108 @@ Single Page
 ===============
 */
 
+.contact-page {
+  background: var(--clr-primary-10);
+  padding: 3rem;
+}
+
+.contact-page h1 {
+  text-align: center;
+}
+
+.contact-page-info {
+  padding: 3rem 0rem;
+}
+
+.mailid {
+  color: var(--clr-primary-5);
+}
+
+.twitter {
+  color: var(--clr-primary-5);
+}
+
+.about-me {
+  background: var(--clr-primary-10);
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+}
+
+.about-me h1 {
+  text-align: center;
+}
+
+.about-me-info {
+  padding: 3rem 0rem;
+  max-width: 40rem;
+}
 /*
 =============== 
-Products Page
+Projects Page
 ===============
 */
+
+.my-projects-title {
+  background: var(--clr-primary-10);
+  text-align: center;
+  padding: 5rem;
+}
+
+.my-projects-center {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.my-project img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.my-project {
+  background: var(--clr-grey-10);
+  padding-bottom: 3rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--dark-shadow);
+}
+
+.my-project-info {
+  padding: 1.5rem;
+  
+}
+
+.my-project-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.my-project-footer span {
+  font-size: 1rem;
+  color: var(--clr-primary-5);
+}
+
+.my-project-footer a {
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+}
+
+.project-logo-container{
+  position: relative;
+}
+
+.project-logo{
+  font-size: 1.5rem;
+  background: var(--clr-primary-5);
+  border: .5rem solid white;
+  padding: .5rem .8rem;
+  border-radius: 50%;
+  position:absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translate(-50%, 50%);
+}
+
